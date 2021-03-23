@@ -1,0 +1,27 @@
+
+ul.circle { list-style-type: circle; }
+ul.star { list-style-type: square;
+}
+ol.lower_alpha { list-style-type: lower-alpha;
+}
+/* { margin: 0; padding: 0; }
+body {
+    width: 962px; background-color: white; margin: 15px auto;
+    border: 5px solid black;
+}
+h1 { padding: 10px;
+     }
+header { border-bottom: 5px solid #ef9c00;
+} section {
+    margin-left: 35px;
+    padding: 0em;
+    height: 304px;  width: 490px;
+    float: left;
+    border-right: 2px solid #ef9c00; float: left;
+
+  }
+aside {
+
+    width: 360px; float: right;
+
+}

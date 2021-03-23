@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7d11f361-b17a-43b2-9777-3cde57d9c882" name="webdsu.com" url="https://webdsu.com/infs730/kkourint1/">
+        <fileTransfer accessType="FTPS" host="webdsu.com" port="21">
+          <advancedOptions>
+            <advancedOptions passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

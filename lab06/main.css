@@ -1,0 +1,89 @@
+/* the styles for the html elements */
+
+header {
+    margin: 0;
+    border-bottom: 2px solid black;
+}
+header h1 {
+    margin: 0;
+    padding: .5em 0;
+    color: black;
+}
+main {
+    margin: 0;
+}
+aside {
+    float: left;
+    width: 250px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+section {
+    float: left;
+    width: 600px;
+    padding-bottom: 1.5em;
+}
+footer {
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px solid black;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+h1 {
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #006cdf !important;
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(208, 133, 4);
+}
+
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+.right {
+    text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;	
+}
+.table td, .table th {
+    vertical-align: middle !important;
+}
+.table td:nth-child(3) {
+    text-align: right;
+}
+.table td:nth-child(4), .table th {
+    text-align: center;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgb(240,240,240) !important;
+}

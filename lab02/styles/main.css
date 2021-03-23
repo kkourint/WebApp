@@ -1,0 +1,90 @@
+/*style for all elements*/
+* {
+    box-sizing: border-box;
+}
+/*setting the margin and padding of all elements to zero*/
+*{ margin: 0;
+   padding: 0;
+}
+/* body font-family*/
+body {
+
+    font-family: "Cambria Math", sans-serif;
+    font-size: 100%;
+    width: 960px;
+    padding: 15px 2em;
+    border: 4px solid black;
+    border-radius: 35px;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px brown;
+
+}
+/*padding the unordered list to be line up properly*/
+ul{
+    padding-left: 1em;
+    }
+/*setting the bottom border of the header*/
+header {
+
+    border-bottom: 5px solid black;
+    padding-bottom: 6em;
+    margin-left:-33px;
+    margin-right: -33px;
+    background: green;
+
+}
+
+/*setting up the header h1 elements to look neat*/
+header h1{
+    font-size: 175%;
+    color: #800000;
+    text-indent:7px;
+    padding-top: 1.5em;
+
+}
+/*setting up the header h2 elements to look neat*/
+header h2{
+   font-size: 130%;
+   text-indent:7px;
+
+}
+/*pushing the image to the left*/
+header img {
+    float: left;
+    margin-left: 25px;
+}
+/*adjusting the h2 element for neatness*/
+main h2{
+    padding-top: 1em;
+    }
+/*adjusting the h3 element for neatness*/
+main h3{
+    padding-top: 0.5em;
+}
+/*Formatting the first letter of the first heading to be 1.5 times the others*/
+main h2:first-child::first-letter {
+    font-size: 150% ;
+}
+/* Making the links to change color when hovered on*/
+a:hover, a:focus {
+    color: orangered;
+}
+/*styling the footer*/
+footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 80%;
+    text-align: center ;
+    border-top: solid black;
+    background: blanchedalmond;
+    margin-left:-33px;
+    margin-right: -33px;
+    margin-bottom: -16px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+
+    }
+
+
+
+

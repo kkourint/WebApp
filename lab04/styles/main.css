@@ -1,0 +1,289 @@
+
+/*style for all elements*/
+* {
+    box-sizing: border-box;
+}
+/*setting the margin and padding of all elements to zero*/
+*{ margin: 0;
+    padding: 0;
+}
+/* body font-family*/
+body {
+
+    font-family: "Cambria Math", sans-serif;
+    font-size: 100%;
+    width: 98%;
+    max-width: 960px;
+    /*padding: 15px 2em;*/
+    border: 4px solid black;
+    border-radius: 35px;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px brown;
+
+}
+
+/*setting the bottom border of the header*/
+header {
+
+    border-bottom: 5px solid black;
+    padding-bottom: 6em;
+    /*margin-left:0%;*/
+    /*margin-right: -0.008%;*/
+    background: green;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+/*setting up the header h1 elements to look neat*/
+header h1{
+    font-size: 175%;
+    color: #800000;
+    text-indent:7px;
+    padding-top: 1.5em;
+
+}
+/*setting up the header h2 elements to look neat*/
+header h2{
+    font-size: 130%;
+    text-indent:7px;
+
+}
+/*pushing the image to the left*/
+header img {
+    float: left;
+    margin-left: 2.6%;
+}
+/*adjusting the h2 element for neatness*/
+main h2{
+    padding-top: 1em;
+}
+/*adjusting the h3 element for neatness*/
+main h3{
+    padding-top: 0.5em;
+}
+/*Formatting the first letter of the first heading to be 1.5 times the others*/
+main h2:first-child::first-letter {
+    font-size: 150% ;
+}
+/* Making the links to change color when hovered on*/
+
+/*styling the footer*/
+footer p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 80%;
+    text-align: center ;
+    border-top: solid black;
+    background: blanchedalmond;
+    /*margin-left:-3.43%;*/
+    /*margin-right: -3.43%;*/
+    /*margin-bottom: -1.67%;*/
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    clear: both;
+
+}
+
+
+/*styling aside*/
+aside {
+    margin-top: 65px;
+    /*float: left;*/
+    /*margin-left: -2.6%;*/
+    flex-basis: 25%;
+    order: 1;
+}
+aside ul li {
+    width: 98%;
+}
+
+/* adjusting vertical navigation menu for neatness*/
+#nav_list ul {
+    list-style: none;
+    margin-left: 3em;
+    margin-bottom: 1.25em;
+    align-items: center;
+
+}
+/*styling the vertical list for neatness*/
+#nav_list li {
+    /*width: 190px;*/
+    margin-bottom: .5em;
+    border: 2px solid blue;
+
+
+}
+/*Vertical navigation list writing*/
+#nav_list li a {
+    display: block;
+    padding: .5em 0 .5em 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+
+}
+
+#nav_list a.current {
+    background-color: silver;
+}
+
+section{
+    /*width:680px;*/
+    float: none;
+    padding: 1em;
+    width:680px;
+    /*float: right;*/
+    order: 2;
+    flex-basis: 70%;
+}
+
+section ul{
+    padding: 2em;
+}
+
+/* moving images to the left*/
+section img{
+    float: left;
+    padding: 0.5em;
+}
+a:link {
+    color: red;
+}
+/* hovering properties*/
+a:hover, a:focus {
+    text-decoration: none;
+    font-size: 100%;
+}
+/*Changing vertical navigation list color when hovered on*/
+#nav_list li a:hover, #nav_list li a:focus {
+    background-color: saddlebrown;
+    color: white;
+}
+
+/*adjusting both navigation bars and the horizontal to fit the entire width*/
+
+
+
+/* horizontal Navigation menu*/
+#nav_menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+
+}
+#nav_menu ul li {
+    /*float: left;*/
+    flex-basis: 25%;
+
+}
+#nav_menu ul li a {
+
+    text-align: center;
+    display: block;
+    /*width: 238px;*/
+    padding: 1em;
+    text-decoration: none;
+    background-color: silver;
+    color: white;
+    font-weight: bold;
+    border-right: 3px solid white; }
+
+#nav_menu ul li a.lastitem { border-right: none; }
+#nav_menu ul li a.current { color: aqua;
+
+}
+
+/* changing horizontal navigation list color when hovered on*/
+#nav_menu ul a:hover, #nav_menu ul a:focus {
+    background-color: saddlebrown;
+    color: blue;
+
+}
+/*horizontal nav bar*/
+nav {
+    width:100%;
+    /*margin-left:-3.33%;*/
+}
+main {
+    display: flex;
+    flex-direction: row; /* setting the orientation of aside and section within main*/
+}
+/*rule that uses the .slicknav_menu class to hide the mobile menu*/
+#mobile_menu{
+    display: none;
+}
+/*media queries for max-width=767px*/
+
+@media only screen and (max-width: 767px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        float: none;
+        flex-basis: 25%;
+
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        order: 1;
+        width: 95%;
+    }
+
+    aside {
+        width: 95%;
+        order: 2;
+
+    }
+
+    #nav_menu {
+        display: none; /*hiding the standard navigation menu*/
+    }
+
+    #mobile_menu {
+        display: block; /*displaying the mobile menu*/
+    }
+
+    .slicknav_menu {
+        background-color: silver !important; /*matching mobile menu and nav menu colors*/
+
+    }
+    #nav_list li a{
+        padding-left: 0;
+    }
+
+}
+
+
+/*Query with max-width=479px*/
+@media only screen and (max-width: 479px) {
+    body{
+        font-size: 85%;
+    }
+
+
+}
+
+figure{
+    float: left;
+    margin-right: 1em;
+
+}
+figcaption {
+    display: block;
+    font-size: 65%;
+    font-weight: lighter;
+    padding-top: .25em;
+    margin-bottom: 1em;
+    border-bottom: 1px dotted ;
+    text-align: center;
+}
