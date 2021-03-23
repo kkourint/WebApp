@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kourintchoute-Lab07 <?php if (!empty($pageTitle)) echo '-' .$pageTitle; ?></title>
     <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/styles.css"
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
 <div class="container">

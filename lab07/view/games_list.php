@@ -39,3 +39,4 @@
     <?php endforeach; ?>
     </tbody>
 </table>
+<?php include 'footer.php';?>
