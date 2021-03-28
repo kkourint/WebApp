@@ -24,7 +24,7 @@
             <form action="." method="post">
                 <input type="hidden" name="action" value="show-update-game">
                 <input type="hidden" name="ID" value="<?php echo $game['ID']; ?>">
-                <input type="submit" class="btn btn-secondary" value="Update">
+                <input type="submit" class="btn btn-secondary" value="Update" aria-label="Update <?php echo $game['Opponent'];?>">
 
             </form>
         </td>
@@ -32,11 +32,22 @@
             <form action="." method="post">
                 <input type="hidden" name="action" value="delete-game">
                 <input type="hidden" name="ID" value="<?php echo $game['ID']; ?>">
-                <input type="submit" class="btn btn-secondary" value="Delete">
+                <input type="submit" class="btn btn-secondary" value="Delete" aria-label="Delete <?php echo $game['Opponent'];?>">
+
             </form>
         </td>
     </tr>
     <?php endforeach; ?>
     </tbody>
 </table>
+<div class="form-group text-center">
+    <form action="." method="post" class="btn-group">
+        <input type="hidden" name="action" value="show-add-game">
+        <input type="submit" class="btn btn-secondary" value="Add Game">
+    </form>
+    <form action="." method="post" class="btn-group">
+        <input type="hidden" name="action" value="clear-message">
+        <input type="submit" class="btn btn-secondary" value="Clear Message">
+    </form>
+</div>
 <?php include 'footer.php';?>
